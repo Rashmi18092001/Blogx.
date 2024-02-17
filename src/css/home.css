@@ -1,0 +1,96 @@
+.home-main{
+    padding: 3rem;
+    height: 100vh - 8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.home-left{
+    width: 60%;
+    height: 35rem;
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+
+ .left-box .box-date{
+    color: rgb(229, 227, 227);
+ }
+ .box-content{
+    padding: 2rem;
+    position: relative;
+    bottom: 8rem;
+    z-index: 2;
+ }
+ .box-title{
+    color: white;
+    font-size: 1.3rem;
+ }
+.home-right{
+    width: 40%;
+    padding: 0 3rem 3rem 3rem;
+}
+.tagline{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* text-align: center; */
+    margin-bottom: 0.5rem;
+}
+.home-desc{
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+}
+.home-main .library{
+    margin-top: 2rem;
+}
+.home-main .library a{
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+  color: black;
+  border: 2.5px solid #214252;
+  color: #214252;
+  border-radius: 5px;
+}
+.home-main .library a:hover{
+    color: white;
+    background-color: #214252;
+}
+
+
+.left-box {
+    position: relative;
+    display: inline-block;
+    width: 25rem;
+    height: 15rem;
+}
+
+.left-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25rem;
+    height: 15rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity here */
+    z-index: 1;
+    opacity: 1; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for smooth effect */
+}
+
+.left-box:hover::before {
+    opacity: 0.3; /* Show the overlay on hover */
+}
+
+.left-box img {
+    display: block;
+    width: 25rem;
+    height: 15rem;
+    z-index: 0;
+}
+.many{
+    text-align: center;
+    margin-bottom: 2rem;
+}
